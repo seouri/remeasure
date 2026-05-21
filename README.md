@@ -17,3 +17,5 @@ uv sync
 ```sh
 uvx opendataloader-pdf -f markdown -o references/md references
 ```
+
+[Zotero Collection](https://www.zotero.org/groups/69319/zaklab/collections/SXNPGSNX/collection)
