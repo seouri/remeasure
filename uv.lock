@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "2026-05-01-lucy"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "opendataloader-pdf" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "opendataloader-pdf", specifier = ">=2.4.1" }]
+
+[[package]]
+name = "opendataloader-pdf"
+version = "2.4.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f5/53/d95c69d8db0cd6326d4966fb003367d088002a66c96cac8344cab70be112/opendataloader_pdf-2.4.4.tar.gz", hash = "sha256:606f55b0a714ddac30d08cb30e517d28762056d75f2b90c1f7d74a5ba7737c3d", size = 22545990, upload-time = "2026-05-19T01:49:34.274Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/92/a9/26965063d52d724af7f6c8283bddd5e626633b64b1e1c65421e9a15740f5/opendataloader_pdf-2.4.4-py3-none-any.whl", hash = "sha256:f25ee3c73d158132b8e1e3f5f0efa513c613f66feabf1013910c2316f253f46c", size = 22560085, upload-time = "2026-05-19T01:49:31.235Z" },
+]
