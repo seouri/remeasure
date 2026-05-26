@@ -10,3 +10,17 @@ wheels/
 .venv
 
 .DS_Store
+
+# LaTeX-generated files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+texput.*
+
+# Local TeX caches used by sandboxed shells
+.tex-cache/
+.tex-home/

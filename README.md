@@ -18,6 +18,37 @@ uv sync
 uvx opendataloader-pdf -f markdown -o references/md references
 ```
 
+# Manuscript LaTeX
+
+The cleaned LaTeX manuscript is in `manuscript/main.tex`.
+
+Install TeX Live locally with Homebrew:
+
+```sh
+brew install texlive
+```
+
+Compile the manuscript from the repository root:
+
+```sh
+latexmk -lualatex -cd manuscript/main.tex
+```
+
+The compiled PDF is written to `manuscript/main.pdf`.
+
+Clean generated LaTeX build files:
+
+```sh
+latexmk -C -cd manuscript/main.tex
+```
+
+If LuaLaTeX reports that it has no writable cache path in a sandboxed shell, use a workspace-local home directory:
+
+```sh
+mkdir -p .tex-home
+HOME="$(pwd)/.tex-home" latexmk -lualatex -cd manuscript/main.tex
+```
+
 [Zotero Collection](https://www.zotero.org/groups/69319/zaklab/collections/SXNPGSNX/collection)
 
 # Transcripts
