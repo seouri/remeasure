@@ -308,7 +308,7 @@ The tradeoff is asymmetric. Between thresholds 0.30 and 0.80, sensitivity declin
 \label{fig:3}
 \end{figure}
 
-The EPIC 10\% rule alerts on roughly 1.76 million measurements (\(\approx\) 27\% of all visits). Our pipeline produces an order-of-magnitude smaller alert burden across the entire threshold range, and the burden is tunable: a deploying clinic can dial the threshold down for higher sensitivity or up for a lighter operational footprint without re-engineering the alert. This is the practical payoff of the trajectory-aware, confidence-fused design --- the same algorithm that achieves higher sensitivity than EPIC on simulated errors also generates a small fraction of EPIC's alerts on real EHR traffic.
+The EPIC 10\% rule alerts on roughly 1.76 million measurements (\(\approx\) 27\% of all visits). Across the evaluated thresholds, the pipeline would have generated far fewer alerts in this retrospective EHR extract, and the threshold sweep quantifies the tradeoff between simulated-error sensitivity and expected remeasurement burden. These results suggest that trajectory-aware alerting could reduce alert volume relative to the EPIC rule, but prospective deployment is needed to measure adherence, PPV, false negatives, and workflow impact in practice.
 
 \section{Discussion}\label{discussion}
 
