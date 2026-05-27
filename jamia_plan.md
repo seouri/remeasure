@@ -11,11 +11,11 @@ Use **Journal of Biomedical Informatics** as the second target if you emphasize 
 1. **Choose the submission frame before rewriting.**
    Pick one: `JAMIA Research and Applications` as the default, `JBI Original Research` as fallback, or `npj Digital Medicine` only if you can strengthen clinical validation, data/code transparency, and implementation relevance. The current manuscript is closest to JAMIA/JBI.
 
-2. **Sharpen the central claim.**
-   Current language around "epistemological," "definitionally correct," "only task formulation," and "catastrophically low specificity" is memorable but reviewer-risky. Recast as: retrospective labels are limited; prospective remeasurement creates a practical path to recoverable reference measurements; the present study is a preclinical/retrospective streaming evaluation plus operational burden analysis.
+2. ~~**Sharpen the central claim.**~~
+   ~~Current language around "epistemological," "definitionally correct," "only task formulation," and "catastrophically low specificity" is memorable but reviewer-risky. Recast as: retrospective labels are limited; prospective remeasurement creates a practical path to recoverable reference measurements; the present study is a preclinical/retrospective streaming evaluation plus operational burden analysis.~~
 
-3. **Reduce overclaiming in the abstract and conclusion.**
-   Replace "outperforms" with more exact claims: "achieved higher sensitivity than streaming comparator implementations, with lower specificity than Daymont and much higher specificity than the EPIC 10% rule." Also remove or soften "EHR-agnostic and amenable to FHIR-based deployment" unless implementation details are added.
+3. ~~**Reduce overclaiming in the abstract and conclusion.**~~
+   ~~Replace "outperforms" with more exact claims: "achieved higher sensitivity than streaming comparator implementations, with lower specificity than Daymont and much higher specificity than the EPIC 10% rule." Also remove or soften "EHR-agnostic and amenable to FHIR-based deployment" unless implementation details are added.~~
 
 4. **Add a contribution box or significance statement.**
    Include 3 bullets: prospective task formulation; streaming multi-detector alert algorithm; evaluation on Harrall simulations plus large EHR alert-burden analysis. For JBI, explicitly explain why the method generalizes beyond pediatric height.
