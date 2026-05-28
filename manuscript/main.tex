@@ -7,6 +7,7 @@
 \usepackage{lmodern}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{booktabs,longtable,array,calc}
 \usepackage{caption}
 \usepackage{hyperref}
@@ -285,14 +286,14 @@ To characterize the alert threshold's tradeoff, we re-ran the streaming pipeline
 
 The tradeoff is asymmetric. Between thresholds 0.30 and 0.80, sensitivity declines only modestly (0.89 \(\to\) 0.87); the false-positive count falls almost five-fold (1,612 \(\to\) 350) for the cost of 55 true positives (2.6\% relative loss in TP). Only beyond threshold 0.80 does sensitivity drop steeply. The operational implication is that a clinic with low tolerance for false alarms could move the threshold up to 0.80 with little loss of simulated-error capture, and only at the most conservative end (\(\ge\) 0.90) does the algorithm begin to miss meaningfully more injected errors.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=6.5in,height=4.17847in]{figures/fig1_threshold_alerts.png}
 \caption{Number of points alerted as a function of the confidence threshold \(\tau\), shown separately for each of the six simulated-error datasets. The dashed vertical line marks the default threshold (\(\tau\) = 0.60).}
 \label{fig:1}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=6.5in,height=3.90903in]{figures/fig2_alerts_by_outcome.png}
 \caption{Alerted points pooled across all six datasets, decomposed as a function of the confidence threshold \(\tau\). The dashed gray line is the total number of points alerted; the green line is the subset that are true positives (correctly flagged simulated errors); the orange line is the subset that are false positives (clean points incorrectly flagged).}
@@ -305,7 +306,7 @@ The tradeoff is asymmetric. Between thresholds 0.30 and 0.80, sensitivity declin
 
 \textbf{Analysis.} To characterize the operational burden the two approaches would impose in live clinical use, we ran both the Epic 10\% rule and our pipeline (in streaming mode, across the same threshold sweep used in Section~3.2) on every height measurement in the cohort, removing flagged points from each patient's running history as in the simulated-benchmark protocol.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=6.5in,height=3.87083in]{figures/fig3_ppoc_alert_burden.png}
 \caption{Total number of height measurements that would trigger an alert in the PPOC cohort (\(\approx\) 6.5 M visits) under the Epic 10\% rule (orange dashed) and under the error alert pipeline at remeasure-confidence thresholds from 0.30 to 0.90 (solid blue). Annotations report absolute counts and the percentage of the full cohort.}
