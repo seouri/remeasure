@@ -1,0 +1,19 @@
+Some initial thoughts. I recognize some hallmarks of language model in the writing. There is nothing inherently wrong with this, other than I find LLM paper writing to be too verbose at times. Examples of language that I would remove. Here are some examples of nice-sounding but ultimately empty sentences and clauses that unnecessarily lengthen the paper:
+This limitation is not primarily an algorithmic shortcoming; it reflects the limited reference information available in retrospective EHR data
+not because the field has been methodologically incautious, but because no better evidence base exists
+
+My recommendation is to review the paper with an eye for these and delete them generously to make the paper more concise. I'll try to do that as I read along.
+
+I think this is a great paper and the framing is well done. Definitely worth publishing. The main limitation is that the experiments are run on benchmarking data. I think without real clinical data or some prospective clinical validation, we are limited in the journals we can pursue. It is a fairly technical paper, so I wouldn't recommend a clinical journal. I would defer to Zak if he has other journal suggestions. I think this is a good fit for a technical conference. I know PSB is coming up and has a paper deadline Aug 3. So perhaps that? I know also of Journal of Biomedical Informatics as a more methods-focused journal in my field. That could also be a good fit.
+
+I really like the framing. The language needs some revising to be readable to clinical audience.
+
+Might be my lack of technical expertise, but I was not really able to understand Methods 2.1 - 2.7 as it is written. This can be an issue if you submit to a journal or conference where you get a physician reviewer like myself.
+
+Zak, Joon, were you able to follow that? I think the way that the methods are described may need to be simplified.
+
+For 3.2, ROC curve may be better fit for summarizing threshold sensitivity sweep in addition to or rather than the table and figures currently there
+
+For 3.3, I am surprised the 10% rule would yield a 27% alert rate. That is certainly not my personal experience with the EHR. We should double check the rule. I wonder if it is 10% rule only applies if the previous visit occurred during a certain period of time? I'll run some tests on our Epic to see what triggers the erroring. This requires further investigation.
+
+Lucy or Joon, do we have the distribution of height deltas? 
